@@ -2,28 +2,44 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale = 1">
-    <title>To do App</title>
+    <title>Basic Quiz App</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     
 </head>
 <body>
+ <div class="container">
+        <h2 class="text-center">Basic Quiz App</h2>
+ </div>
+ 
+ <div class="form-group">
+        <label for="inputItem">Question 1. What is the capital of Ghana?</label>
+    <div class="form-check" id="q1">
+        <input type="radio" id="qal" name="capital" value="Kumasi">Kumasi
+        <input type="radio" id="qa2" name="capital" value="Ho">Ho
+        <input type="radio" id="qa3" name="capital" value="Accra">Acrra
+        <input type="radio" id="qa4" name="capital" value="Tamele">Tamale
+    </div>
+    <button id="addbtn" class="btn btn-info">Check answer</button>
+    <button id="clearbtn" class="btn btn-danger">Clear </button>
+</div>
+      <br>
+      <br>
     <div class="container">
-        <h2 class="text-center">Welcome to my todo list app in javascript.</h2>
-    
-
-    <div class="form-group">
-        <label for="inputItem">Add</label>
-        <input type="text" class="form-control" name="" id="inputItem">
+    <label for="inputItem">Question 2. Who created Git?</label>  
+    <div class="form-check" id="q2">
+        <input type="radio" id="qal" name="capital" value="Nicolas">Nicolas
+        <input type="radio" id="qa2" name="capital" value="Torvalds">Torvalds Linus
+        <input type="radio" id="qa3" name="capital" value="Dennis">Dennis Riggi
+        <input type="radio" id="qa4" name="capital" value="Maxwell">Maxwell Goodman
+        
     </div>
-    <button id="addbtn" class="btn btn-info">Add list</button>
-    <button id="clearbtn" class="btn btn-danger">Clear</button>
+    <button id="addbtn" class="btn btn-info">Check answer</button>
+    <button id="clearbtn" class="btn btn-danger">Clear </button>
     <br>
-
-    <p>All todo lists</p>
-    <ol id="mylist"></ol>
     </div>
-    
+
+
     <script type="" src="js/script.js"></script>  
 </body>
 </html>
